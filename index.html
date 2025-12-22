@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta SPDATA | Paraná Empreendimentos Hospitalares</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f5f9ff; color: #333; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { background: linear-gradient(135deg, #0056a9, #003366); color: white; padding: 40px 20px; border-radius: 12px; text-align: center; margin-bottom: 30px; }
+        header h1 { font-size: 2.8rem; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; opacity: 0.9; }
+        .section-title { color: #0056a9; margin: 30px 0 20px; padding-bottom: 10px; border-bottom: 3px solid #0056a9; }
+        .projects-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 25px; margin-bottom: 30px; }
+        .project-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 5px solid #0056a9; }
+        .project-card h3 { color: #003366; margin-bottom: 15px; font-size: 1.4rem; }
+        .project-header { display: flex; justify-content: space-between; align-items: start; margin-bottom: 15px; }
+        .project-value { background: #e6f0ff; padding: 10px 15px; border-radius: 8px; font-weight: bold; color: #0056a9; }
+        .modules-list { background: #f8fbff; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .module-item { display: inline-block; background: #eef5ff; padding: 5px 12px; margin: 5px; border-radius: 20px; font-size: 0.9rem; }
+        .benefits-section { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
+        .benefit-card { background: #eef5ff; padding: 20px; border-radius: 10px; border-left: 5px solid #0056a9; }
+        .benefit-card h3 { color: #003366; margin-bottom: 10px; }
+        .special-offer { background: linear-gradient(135deg, #fff8e1, #ffecb3); padding: 25px; border-radius: 12px; border-left: 5px solid #ffb300; margin: 30px 0; }
+        .financial-table { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #0056a9; color: white; }
+        tr:hover { background-color: #f1f7ff; }
+        .highlight { background-color: #e6f0ff; font-weight: bold; }
+        .total-row { font-size: 1.2rem; font-weight: bold; color: #003366; }
+        .contact-info { background: #003366; color: white; padding: 30px; border-radius: 12px; text-align: center; margin-top: 30px; }
+        .contact-info a { color: #4fc3f7; text-decoration: none; }
+        .contact-info a:hover { text-decoration: underline; }
+        .deadline-badge { 
+            background: linear-gradient(135deg, #d32f2f, #b71c1c); 
+            color: white; 
+            padding: 8px 15px; 
+            border-radius: 20px; 
+            font-weight: bold; 
+            display: inline-block;
+            margin: 10px 0;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        @media (max-width: 768px) {
+            .projects-section { grid-template-columns: 1fr; }
+            .project-card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SPDATA | Proposta Comercial</h1>
+            <p>Para: <strong>Paraná Empreendimentos Hospitalares</strong></p>
+            <p>Data de Validade: 20 de fevereiro de 2026 | Valores referentes a 2025</p>
+        </header>
+
+        <section>
+            <h2 class="section-title">🏥 Propostas de Referência SPDATA</h2>
+            <p style="margin-bottom: 20px;">Baseamos nossa proposta em projetos recentemente elaborados para hospitais similares, demonstrando nossa expertise e capacidade de entrega:</p>
+            
+            <div class="projects-section">
+                <!-- Projeto Missal -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <h3>HOSPITAL NOSSA SENHORA DE FÁTIMA</h3>
+                            <p><strong>Missal/PR</strong></p>
+                        </div>
+                        <div class="project-value">Taxa de Implantação:<br>R$ 136.430,00</div>
+                    </div>
+                    
+                    <div class="modules-list">
+                        <h4 style="color: #0056a9; margin-bottom: 10px;">📦 Módulos Inclusos:</h4>
+                        <span class="module-item">Recepção Externa</span>
+                        <span class="module-item">Recepção Interna</span>
+                        <span class="module-item">Chamada Digital</span>
+                        <span class="module-item">Painel Estatístico</span>
+                        <span class="module-item">Bloco Cirúrgico</span>
+                        <span class="module-item">P.E.P.</span>
+                        <span class="module-item">Prontuário Eletrônico</span>
+                        <span class="module-item">Gestão de Estoque</span>
+                        <span class="module-item">SADT-Laboratório</span>
+                        <span class="module-item">SADT-Imagens</span>
+                        <span class="module-item">Integrador SPDATA</span>
+                        <span class="module-item">Faturamento SUS</span>
+                        <span class="module-item">Faturamento Convênios</span>
+                        <span class="module-item">Financeiro</span>
+                        <span class="module-item">SGHPACS</span>
+                    </div>
+                    
+                    <div style="margin-top: 20px; padding: 15px; background: #f0f7ff; border-radius: 8px;">
+                        <p><strong>💵 Condições Financeiras:</strong></p>
+                        <p><strong>Implantação:</strong> R$ 136.430,00 (parcelado em 12x sem juros)</p>
+                        <p><strong>Mensalidade (Locação + Suporte):</strong> R$ 6.300,00/mês</p>
+                        <p><small>Despesas de implantação por conta do cliente</small></p>
+                    </div>
+                </div>
+
+                <!-- Projeto Capitão Leonidas Marques -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <h3>ASS. DE PROMOÇÃO À SAÚDE, MAT. E INF. DE CAP. LEON. MARQ. HOSP. N. S. APAR</h3>
+                            <p><strong>Capitão Leonidas Marques/PR</strong></p>
+                        </div>
+                        <div class="project-value">Taxa de Implantação:<br>R$ 130.760,00</div>
+                    </div>
+                    
+                    <div class="modules-list">
+                        <h4 style="color: #0056a9; margin-bottom: 10px;">📦 Módulos Inclusos:</h4>
+                        <span class="module-item">Recepção Externa</span>
+                        <span class="module-item">Recepção Interna</span>
+                        <span class="module-item">Chamada Digital</span>
+                        <span class="module-item">Painel Estatístico</span>
+                        <span class="module-item">Bloco Cirúrgico</span>
+                        <span class="module-item">P.E.P.</span>
+                        <span class="module-item">Prontuário Eletrônico</span>
+                        <span class="module-item">Gestão de Estoque</span>
+                        <span class="module-item">SADT-Laboratório</span>
+                        <span class="module-item">SADT-Imagens</span>
+                        <span class="module-item">Integrador SPDATA</span>
+                        <span class="module-item">Faturamento SUS</span>
+                        <span class="module-item">Faturamento Convênios</span>
+                        <span class="module-item">Financeiro</span>
+                        <span class="module-item">SGHPACS</span>
+                    </div>
+                    
+                    <div style="margin-top: 20px; padding: 15px; background: #f0f7ff; border-radius: 8px;">
+                        <p><strong>💵 Condições Financeiras:</strong></p>
+                        <p><strong>Implantação:</strong> R$ 130.760,00 (parcelado em 12x sem juros)</p>
+                        <p><strong>Mensalidade (Locação + Suporte):</strong> R$ 5.760,00/mês</p>
+                        <p><small>Despesas de implantação por conta do cliente</small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <h2 class="section-title">🚀 Benefícios da Solução SPDATA SGH</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>📊 Sistema de Faturamento Integrado</h3>
+                    <p>Faturamento SUS e convênios automatizado, com validação em tempo real e redução de glosas através do integrador padrão SPDATA.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🩺 Prontuário Eletrônico do Paciente</h3>
+                    <p>Registro clínico completo, integrado com SADT-Laboratório e SADT-Imagens para acesso centralizado às informações do paciente.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>⚡ Bloco Cirúrgico Inteligente</h3>
+                    <p>Gestão completa de cirurgias com P.E.P. (Prontuário Eletrônico do Paciente cirúrgico), controles de materiais e otimização de agendas.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>💾 Tecnologia Firebird</h3>
+                    <p>Banco de dados sem custos de licenciamento, reduzindo significativamente os custos operacionais da instituição.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>📦 Gestão de Estoque Hospitalar</h3>
+                    <p>Controle automatizado de insumos, medicamentos e materiais com alertas de validade, ponto de reposição e inventário integrado.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🔍 SADT Integrado</h3>
+                    <p>Sistema de Apoio Diagnóstico e Terapêutico completo para Laboratório e Imagens, com laudos digitais e fluxo de trabalho otimizado.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>📈 Painel Estatístico Gerencial</h3>
+                    <p>Dashboards em tempo real com indicadores de ocupação, produtividade, faturamento e qualidade assistencial para tomada de decisão.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🏥 Recepção Externa e Interna</h3>
+                    <p>Controle completo de fluxo de pacientes com chamada digital, agendamento e gestão de leitos integrada ao prontuário eletrônico.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🔒 Conformidade e Segurança</h3>
+                    <p>Sistema desenvolvido para atender às exigências da LGPD, regulamentos do SUS e normas da vigilância sanitária com auditoria completa.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>💳 Sistema Financeiro Hospitalar</h3>
+                    <p>Contas a pagar/receber, conciliação bancária e controle orçamentário específico para instituições de saúde.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🖼️ SGHPACS - Arquivo de Imagens</h3>
+                    <p>Armazenamento e gestão de imagens médicas com visualização integrada ao prontuário eletrônico e compartilhamento seguro.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🔄 Integrador Padrão SPDATA</h3>
+                    <p>Conectividade com sistemas de terceiros, equipamentos médicos e sistemas governamentais para interoperabilidade total.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="special-offer">
+            <div class="deadline-badge">OFERTA ESPECIAL COM PRAZO LIMITADO</div>
+            <h3>🎁 5% DE DESCONTO NA IMPLANTAÇÃO E MENSALIDADE</h3>
+            <p><strong>Condição exclusiva:</strong> Para propostas aceitas até <strong>26 de dezembro de 2025</strong></p>
+            <p><strong>Vantagens:</strong></p>
+            <ul style="margin: 10px 0 10px 20px;">
+                <li>Garantia de valores de 2025 (protegido contra reajustes de 2026)</li>
+                <li>5% de desconto na taxa total de implantação</li>
+                <li>5% de desconto na mensalidade do primeiro ano</li>
+                <li>Treinamento personalizado para as equipes</li>
+                <li>Prioridade na agenda de implantação para 2026</li>
+            </ul>
+            <p style="margin-top: 15px; font-weight: bold;">⚠️ Importante: Em 2026, os valores estarão sujeitos a reajustes conforme política comercial vigente.</p>
+        </div>
+
+        <section class="financial-table">
+            <h2 class="section-title">💰 Proposta Financeira para Paraná Empreendimentos Hospitalares</h2>
+            <p style="margin-bottom: 20px;">Com base nas propostas de referência, apresentamos as condições comerciais para sua instituição:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Descrição</th>
+                        <th>Valor de Referência</th>
+                        <th>Condição Especial até 26/12/2025</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Taxa de Implantação SGH</strong></td>
+                        <td>Instalação completa, configuração, parametrização e treinamento inicial dos usuários</td>
+                        <td>R$ 130.760,00 - R$ 136.430,00<br><small>(conforme escopo específico)</small></td>
+                        <td><strong>R$ 124.222,00 - R$ 129.608,50</strong><br><small>(com 5% de desconto)</small></td>
+                    </tr>
+                    <tr class="highlight">
+                        <td><strong>Loc. Mensal + Suporte SGH</strong></td>
+                        <td>Acesso a todos os módulos, atualizações e suporte técnico especializado</td>
+                        <td>R$ 5.760,00 - R$ 6.300,00<br><small>(conforme escopo específico)</small></td>
+                        <td><strong>R$ 5.472,00 - R$ 5.985,00/mês</strong><br><small>(primeiro ano com 5% desconto)</small></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Condições de Pagamento</strong></td>
+                        <td colspan="3">
+                            <strong>Implantação:</strong> Parcelado em 12x sem juros<br>
+                            <strong>Mensalidade:</strong> Fatura mensal com vencimento no dia 10 de cada mês
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Despesas de Implantação</strong></td>
+                        <td colspan="3">
+                            Deslocamento, hospedagem e alimentação da equipe SPDATA conforme política apresentada nas propostas de referência<br>
+                            <small><strong>Observação:</strong> Estas despesas são de responsabilidade do contratante e serão reembolsadas mediante comprovantes</small>
+                        </td>
+                    </tr>
+                    <tr class="total-row">
+                        <td colspan="2"><strong>TAXA DE IMPLANTAÇÃO COM DESCONTO</strong><br><small>(para aceite até 26/12/2025)</small></td>
+                        <td colspan="2">
+                            <strong>R$ 124.222,00 - R$ 129.608,50</strong><br>
+                            <small>(dependendo do escopo específico da instituição)</small><br><br>
+                            <strong>+ R$ 5.472,00 - R$ 5.985,00/mês</strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 15px; font-size: 0.9rem;">
+                * Valores baseados nas propostas de:<br>
+                - Hospital Nossa Senhora de Fátima (Missal/PR): R$ 136.430,00 de implantação + R$ 6.300,00/mês<br>
+                - Hospital Capitão Leonidas Marques (Capitão Leonidas Marques/PR): R$ 130.760,00 de implantação + R$ 5.760,00/mês
+            </p>
+        </section>
+
+        <div class="contact-info">
+            <h2>📞 Vamos Transformar a Gestão da Sua Instituição?</h2>
+            <p style="margin: 15px 0;">Agende uma demonstração personalizada e aproveite as condições especiais de 2025!</p>
+            
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+                <h3 style="margin-bottom: 15px;">👤 Consultor Responsável</h3>
+                <p><strong>Alexandre</strong></p>
+                <p><strong>📧 Email:</strong> <a href="mailto:alexandre.pr@spdata.com.br">alexandre.pr@spdata.com.br</a></p>
+                <p><strong>📞 Telefone:</strong> +55 31 3399-2500</p>
+            </div>
+            
+            <p><strong>🌐 Site:</strong> <a href="https://www.spdata.com.br" target="_blank">www.spdata.com.br</a></p>
+            
+            <div style="margin-top: 25px; padding: 15px; background: rgba(255,255,255,0.15); border-radius: 8px;">
+                <p style="font-weight: bold;">Proposta válida até 20 de fevereiro de 2026 | Valores referentes a 2025</p>
+                <p style="margin-top: 10px;">⚠️ Atenção: Valores de 2026 estarão sujeitos a reajustes</p>
+                <p>Garanta os valores atuais com desconto aceitando até 26/12/2025</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
