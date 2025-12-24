@@ -12,28 +12,24 @@
         header h1 { font-size: 2.8rem; margin-bottom: 10px; }
         header p { font-size: 1.2rem; opacity: 0.9; }
         .section-title { color: #0056a9; margin: 30px 0 20px; padding-bottom: 10px; border-bottom: 3px solid #0056a9; }
-        .projects-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 25px; margin-bottom: 30px; }
+        
+        /* Projetos Section */
+        .projects-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; margin-bottom: 30px; }
         .project-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 5px solid #0056a9; }
         .project-card h3 { color: #003366; margin-bottom: 15px; font-size: 1.4rem; }
         .project-header { display: flex; justify-content: space-between; align-items: start; margin-bottom: 15px; }
         .project-value { background: #e6f0ff; padding: 10px 15px; border-radius: 8px; font-weight: bold; color: #0056a9; }
         .modules-list { background: #f8fbff; padding: 15px; border-radius: 8px; margin: 15px 0; }
         .module-item { display: inline-block; background: #eef5ff; padding: 5px 12px; margin: 5px; border-radius: 20px; font-size: 0.9rem; }
+        
+        /* Benefits Section */
         .benefits-section { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 30px; }
         .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
         .benefit-card { background: #eef5ff; padding: 20px; border-radius: 10px; border-left: 5px solid #0056a9; }
         .benefit-card h3 { color: #003366; margin-bottom: 10px; }
+        
+        /* Special Offer */
         .special-offer { background: linear-gradient(135deg, #fff8e1, #ffecb3); padding: 25px; border-radius: 12px; border-left: 5px solid #ffb300; margin: 30px 0; }
-        .financial-table { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 30px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #ddd; }
-        th { background-color: #0056a9; color: white; }
-        tr:hover { background-color: #f1f7ff; }
-        .highlight { background-color: #e6f0ff; font-weight: bold; }
-        .total-row { font-size: 1.2rem; font-weight: bold; color: #003366; }
-        .contact-info { background: #003366; color: white; padding: 30px; border-radius: 12px; text-align: center; margin-top: 30px; }
-        .contact-info a { color: #4fc3f7; text-decoration: none; }
-        .contact-info a:hover { text-decoration: underline; }
         .deadline-badge { 
             background: linear-gradient(135deg, #d32f2f, #b71c1c); 
             color: white; 
@@ -44,14 +40,131 @@
             margin: 10px 0;
             animation: pulse 2s infinite;
         }
+        
+        /* Financial Table */
+        .financial-table { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        .financial-header { 
+            background: linear-gradient(135deg, #0056a9, #003366); 
+            color: white; 
+            padding: 20px; 
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 0;
+        }
+        
+        /* Tabela Responsiva */
+        .table-responsive {
+            overflow-x: auto;
+            margin-top: 20px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            min-width: 800px;
+        }
+        th, td { 
+            padding: 15px; 
+            text-align: left; 
+            border-bottom: 1px solid #ddd; 
+        }
+        th { 
+            background-color: #0056a9; 
+            color: white; 
+            font-weight: 600;
+        }
+        tr:hover { background-color: #f1f7ff; }
+        .highlight { background-color: #e6f0ff; font-weight: bold; }
+        .total-row { font-size: 1.2rem; font-weight: bold; color: #003366; }
+        
+        /* Seção dos 3 Projetos com Desconto */
+        .discount-projects-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .discount-project-card {
+            background: linear-gradient(135deg, #f0f7ff, #e6f0ff);
+            border-radius: 12px;
+            padding: 25px;
+            border-left: 5px solid #0056a9;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .project-number {
+            display: inline-block;
+            background: #0056a9;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #666;
+            font-size: 0.9rem;
+            margin-right: 10px;
+        }
+        
+        .discount-price {
+            color: #d32f2f;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .savings-badge {
+            background: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        
+        /* Contact Info */
+        .contact-info { background: #003366; color: white; padding: 30px; border-radius: 12px; text-align: center; margin-top: 30px; }
+        .contact-info a { color: #4fc3f7; text-decoration: none; }
+        .contact-info a:hover { text-decoration: underline; }
+        
+        /* Animações */
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
+        
+        /* Responsividade */
+        @media (max-width: 992px) {
+            .projects-section { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+            .benefits-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+            header h1 { font-size: 2.2rem; }
+        }
+        
         @media (max-width: 768px) {
             .projects-section { grid-template-columns: 1fr; }
             .project-card { padding: 20px; }
+            .discount-projects-section { grid-template-columns: 1fr; }
+            .financial-table { padding: 20px; }
+            .container { padding: 15px; }
+            header { padding: 30px 15px; }
+            header h1 { font-size: 1.8rem; }
+        }
+        
+        @media (max-width: 480px) {
+            .project-header { flex-direction: column; }
+            .project-value { margin-top: 10px; }
+            th, td { padding: 10px; }
+            .benefit-card { padding: 15px; }
         }
     </style>
 </head>
@@ -243,7 +356,7 @@
         <div class="special-offer">
             <div class="deadline-badge">OFERTA ESPECIAL COM PRAZO LIMITADO</div>
             <h3>🎁 5% DE DESCONTO NA IMPLANTAÇÃO E MENSALIDADE</h3>
-            <p><strong>Condição exclusiva:</strong> Para propostas aceitas até <strong>31 de dezembro de 2025</strong></p>
+            <p><strong>Condição exclusiva:</strong> Para propostas aceitas até <strong>31 de dezembro de 2026</strong></p>
             <p><strong>Vantagens:</strong></p>
             <ul style="margin: 10px 0 10px 20px;">
                 <li>Garantia de valores de 2025 (protegido contra reajustes de 2026)</li>
@@ -252,70 +365,165 @@
                 <li>Treinamento personalizado para as equipes</li>
                 <li>Prioridade na agenda de implantação para 2026</li>
             </ul>
-            <p style="margin-top: 15px; font-weight: bold;">⚠️ Importante: Em 2026, os valores estarão sujeitos a reajustes conforme política comercial vigente.</p>
+            <p style="margin-top: 15px; font-weight: bold;">⚠️ Importante: Em 2027, os valores estarão sujeitos a reajustes conforme política comercial vigente.</p>
         </div>
 
         <section class="financial-table">
             <h2 class="section-title">💰 Proposta Financeira para Paraná Empreendimentos Hospitalares</h2>
-            <p style="margin-bottom: 20px;">Com base nas propostas de referência, apresentamos as condições comerciais para sua instituição:</p>
+            <p style="margin-bottom: 20px;">Com base nas três propostas de referência, apresentamos as condições comerciais para sua instituição:</p>
             
-            <table>
-                <thead>
-                    <tr>
-                        <th>Serviço</th>
-                        <th>Descrição</th>
-                        <th>Valor de Referência</th>
-                        <th>Condição Especial até 31/12/2025</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Taxa de Implantação SGH</strong></td>
-                        <td>Instalação completa, configuração, parametrização e treinamento inicial dos usuários</td>
-                        <td>R$ 120.980,00 - R$ 136.430,00<br><small>(conforme escopo específico)</small></td>
-                        <td><strong>R$ 114.931,00 - R$ 129.608,50</strong><br><small>(com 5% de desconto)</small></td>
-                    </tr>
-                    <tr class="highlight">
-                        <td><strong>Loc. Mensal + Suporte SGH</strong></td>
-                        <td>Acesso a todos os módulos, atualizações e suporte técnico especializado</td>
-                        <td>R$ 5.196,00 - R$ 6.300,00<br><small>(conforme escopo específico)</small></td>
-                        <td><strong>R$ 4.936,20 - R$ 5.985,00/mês</strong><br><small>(primeiro ano com 5% desconto)</small></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Condições de Pagamento</strong></td>
-                        <td colspan="3">
-                            <strong>Implantação:</strong> Parcelado em 12x sem juros<br>
-                            <strong>Mensalidade:</strong> Fatura mensal com vencimento no dia 10 de cada mês
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Despesas de Implantação</strong></td>
-                        <td colspan="3">
-                            Deslocamento, hospedagem e alimentação da equipe SPDATA conforme política apresentada nas propostas de referência<br>
-                            <small><strong>Observação:</strong> Estas despesas são de responsabilidade do contratante e serão reembolsadas mediante comprovantes</small>
-                        </td>
-                    </tr>
-                    <tr class="total-row">
-                        <td colspan="2"><strong>TAXA DE IMPLANTAÇÃO COM DESCONTO</strong><br><small>(para aceite até 31/12/2025)</small></td>
-                        <td colspan="2">
-                            <strong>R$ 114.931,00 - R$ 129.608,50</strong><br>
-                            <small>(dependendo do escopo específico da instituição)</small><br><br>
-                            <strong>+ R$ 4.936,20 - R$ 5.985,00/mês</strong>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <p style="margin-top: 15px; font-size: 0.9rem;">
-                * Valores baseados nas propostas de:<br>
-                - Hospital Nossa Senhora de Fátima (Missal/PR): R$ 136.430,00 de implantação + R$ 6.300,00/mês<br>
-                - Hospital Capitão Leonidas Marques (Capitão Leonidas Marques/PR): R$ 130.760,00 de implantação + R$ 5.760,00/mês<br>
-                - Hospital de Clínicas de Medianeira (Medianeira/PR): R$ 120.980,00 de implantação + R$ 5.196,00/mês
-            </p>
+            <!-- SEÇÃO DOS 3 PROJETOS COM DESCONTO -->
+            <h3 style="color: #0056a9; margin: 30px 0 20px;">📊 Valores com Desconto para Aceite até 31/12/2026</h3>
+            
+            <div class="discount-projects-section">
+                <!-- Projeto 1 com Desconto -->
+                <div class="discount-project-card">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span class="project-number">1</span>
+                        <h3 style="color: #003366; margin: 0;">Projeto Básico</h3>
+                    </div>
+                    <p style="color: #666; margin-bottom: 15px;">Baseado no Hospital de Clínicas de Medianeira</p>
+                    
+                    <div>
+                        <p><strong>Taxa de Implantação:</strong></p>
+                        <div style="display: flex; align-items: center;">
+                            <span class="original-price">R$ 120.980,00</span>
+                            <span class="savings-badge">Economize 5%</span>
+                        </div>
+                        <div class="discount-price">R$ 114.931,00</div>
+                        
+                        <p style="margin-top: 20px;"><strong>Mensalidade (1º ano):</strong></p>
+                        <div style="display: flex; align-items: center;">
+                            <span class="original-price">R$ 5.196,00/mês</span>
+                        </div>
+                        <div class="discount-price">R$ 4.936,20/mês</div>
+                        
+                        <div style="background: #e8f5e9; padding: 15px; border-radius: 8px; margin-top: 20px;">
+                            <p><strong>📦 Escopo Inclui:</strong></p>
+                            <p>• PEP Completo • SADT Básico • Faturamento • Financeiro</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 2 com Desconto -->
+                <div class="discount-project-card">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span class="project-number">2</span>
+                        <h3 style="color: #003366; margin: 0;">Projeto Intermediário</h3>
+                    </div>
+                    <p style="color: #666; margin-bottom: 15px;">Baseado no Hospital Capitão Leonidas Marques</p>
+                    
+                    <div>
+                        <p><strong>Taxa de Implantação:</strong></p>
+                        <div style="display: flex; align-items: center;">
+                            <span class="original-price">R$ 130.760,00</span>
+                            <span class="savings-badge">Economize 5%</span>
+                        </div>
+                        <div class="discount-price">R$ 124.222,00</div>
+                        
+                        <p style="margin-top: 20px;"><strong>Mensalidade (1º ano):</strong></p>
+                        <div style="display: flex; align-items: center;">
+                            <span class="original-price">R$ 5.760,00/mês</span>
+                        </div>
+                        <div class="discount-price">R$ 5.472,00/mês</div>
+                        
+                        <div style="background: #e8f5e9; padding: 15px; border-radius: 8px; margin-top: 20px;">
+                            <p><strong>📦 Escopo Inclui:</strong></p>
+                            <p>• Todos do Projeto 1 • Bloco Cirúrgico • Gestão de Estoque • SGHPACS</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 3 com Desconto -->
+                <div class="discount-project-card">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span class="project-number">3</span>
+                        <h3 style="color: #003366; margin: 0;">Projeto Completo</h3>
+                    </div>
+                    <p style="color: #666; margin-bottom: 15px;">Baseado no Hospital Nossa Senhora de Fátima</p>
+                    
+                    <div>
+                        <p><strong>Taxa de Implantação:</strong></p>
+                        <div style="display: flex; align-items: center;">
+                            <span class="original-price">R$ 136.430,00</span>
+                            <span class="savings-badge">Economize 5%</span>
+                        </div>
+                        <div class="discount-price">R$ 129.608,50</div>
+                        
+                        <p style="margin-top: 20px;"><strong>Mensalidade (1º ano):</strong></p>
+                        <div style="display: flex; align-items: center;">
+                            <span class="original-price">R$ 6.300,00/mês</span>
+                        </div>
+                        <div class="discount-price">R$ 5.985,00/mês</div>
+                        
+                        <div style="background: #e8f5e9; padding: 15px; border-radius: 8px; margin-top: 20px;">
+                            <p><strong>📦 Escopo Inclui:</strong></p>
+                            <p>• Todos os módulos • SADT Completo • PACs • Integrador Total</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- TABELA COMPARATIVA -->
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Serviço</th>
+                            <th>Descrição</th>
+                            <th>Condições Gerais</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Condições de Pagamento</strong></td>
+                            <td>Formas de pagamento disponíveis</td>
+                            <td>
+                                <strong>Implantação:</strong> Parcelado em 12x sem juros<br>
+                                <strong>Mensalidade:</strong> Fatura no dia 10 de cada mês
+                            </td>
+                        </tr>
+                        <tr class="highlight">
+                            <td><strong>Despesas de Implantação</strong></td>
+                            <td>Custos adicionais durante a implementação</td>
+                            <td>
+                                Deslocamento, hospedagem e alimentação da equipe SPDATA<br>
+                                <small><strong>Observação:</strong> Estas despesas são de responsabilidade do contratante e serão reembolsadas mediante comprovantes</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Suporte e Atualizações</strong></td>
+                            <td>Manutenção do sistema após implantação</td>
+                            <td>
+                                Suporte técnico especializado 24/7<br>
+                                Atualizações automáticas de segurança<br>
+                                Novas funcionalidades sem custo adicional
+                            </td>
+                        </tr>
+                        <tr class="total-row">
+                            <td colspan="3" style="text-align: center;">
+                                <strong>OFERTA VÁLIDA ATÉ 31/12/2026</strong><br>
+                                <small>Garanta os valores com desconto e evite reajustes de 2027</small>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div style="background: #f0f7ff; padding: 20px; border-radius: 10px; margin-top: 25px;">
+                <p><strong>ℹ️ Observações Importantes:</strong></p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Os valores apresentados são referentes às três propostas de referência</li>
+                    <li>O escopo final será definido conforme as necessidades específicas da sua instituição</li>
+                    <li>Desconto de 5% válido apenas para aceites até 31/12/2026</li>
+                    <li>Após esta data, valores sujeitos à política comercial vigente em 2027</li>
+                </ul>
+            </div>
         </section>
 
         <div class="contact-info">
             <h2>📞 Vamos Transformar a Gestão da Sua Instituição?</h2>
-            <p style="margin: 15px 0;">Agende uma demonstração personalizada e aproveite as condições especiais de 2025!</p>
+            <p style="margin: 15px 0;">Agende uma demonstração personalizada e aproveite as condições especiais com desconto!</p>
             
             <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
                 <h3 style="margin-bottom: 15px;">👤 Consultor Responsável</h3>
@@ -328,8 +536,8 @@
             
             <div style="margin-top: 25px; padding: 15px; background: rgba(255,255,255,0.15); border-radius: 8px;">
                 <p style="font-weight: bold;">Proposta válida até 20 de fevereiro de 2026 | Valores referentes a 2025</p>
-                <p style="margin-top: 10px;">⚠️ Atenção: Valores de 2026 estarão sujeitos a reajustes</p>
-                <p>Garanta os valores atuais com desconto aceitando até 31/12/2025</p>
+                <p style="margin-top: 10px; font-size: 0.9rem;">⚠️ Atenção: Valores de 2027 estarão sujeitos a reajustes</p>
+                <p>Garanta os valores atuais com desconto aceitando até 31/12/2026</p>
             </div>
         </div>
     </div>
